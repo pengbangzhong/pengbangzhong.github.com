@@ -1,11 +1,11 @@
 ---
 	layout:default
-	title:我的Blog
+	title:学习笔记
 ---
 <ul>
 	{% for post in site.posts %}
 		<li>
-
+			测试一句话
 			{{ post.date | date_to_string }}
 			<a href="{{ post.url }}">{{ post.title}}</a>
 		</li>	
