@@ -21,7 +21,7 @@
 							wfList.eq(i).css("top",10); //第一行Li的默认Top值为0
 							wfList.eq(i).css("left",i * wfWidth); //每个列的Left值就是当前列数*内容区域宽度
 						}else{
-							minHeight = Math.min.apply(null,wfArr)+10; //比较数值中的值，取得最小值（也就是每行中，最小高度）
+							minHeight = Math.min.apply(null,wfArr); //比较数值中的值，取得最小值（也就是每行中，最小高度）
 							minCol = getArrayKey(wfArr, minHeight); //最小的值对应的指针
 							wfArr[minCol] += colHeight; //加上新高度后更新高度值
 							wfList.eq(i).css("top",minHeight); //先得到高度最小的Li，然后把接下来的li放到它的下面
