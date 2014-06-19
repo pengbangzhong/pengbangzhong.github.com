@@ -4,3 +4,15 @@ background: url("../images/bg.png") repeat scroll left top transparent;
 background-attachment: fixed;
 font-family:"Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
 }
+#waterfall{margin:50px auto; position:relative;}
+.picList{ width:222px; box-shadow:0 0 3px #CCC; background:#FFF; margin:0 6px 12px 6px; position:absolute; display:block;}
+.picList:hover{ box-shadow:1px 1px 5px #BBB;}
+.picList:hover .shareIcon{ display:block;}
+.picList .shareIcon{ display:none; width:100px; height:24px; background:url(images/share_icon.png) no-repeat; cursor:pointer; position:absolute; top:11px; right:11px; z-index:2; opacity:.9;}
+.picList .shareIcon:hover{ opacity:1;}
+.picThumbnail{ border-bottom:1px solid #EEE;}
+.picThumbnail a{ display:block; margin:11px; max-height:600px; overflow:hidden;}
+.picThumbnail img{ max-width:200px; display: block;}
+.picDescription{ padding:1px; text-align:center; padding:5px 10px; background:#F7F7F7; margin-top:1px;}
+
+.info{ line-height:20px; padding:10px 0; border-bottom:1px solid #E2E2E2; background:rgba(255,255,255,0.2); text-align:center;}
